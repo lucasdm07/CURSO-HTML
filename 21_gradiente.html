@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8">
+    <meta name="author" content="lucas">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5, tecnologia">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+           /* background-image: linear-gradient(to left top, rgb(187, 226, 187), rgb(81, 81, 248)); */
+            background-image: linear-gradient(to top, rgba(0,0,0.8), transparent), url(imagens/bg.jpg);
+                     background-size: 100%, 100%;
+        }
+
+        #radius {
+            background: orange;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border-radius: 50px 100px / 100px 50px;
+            /* arredondar as bordas */
+            box-shadow: 0 0 10px 10px black, 0 0 10px 10px red;
+            /* coloca sombra nas bordas */
+        }
+
+        h1 {
+            font-family: sans-serif;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: -10px -10px 0 #5d5d5d5d;
+            /* coloca sombra no h1 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS efeitos</h1>
+    <div id="radius">
+
+    </div>
+</body>
+
+</html>

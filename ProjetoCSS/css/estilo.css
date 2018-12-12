@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #cccccc;
+    margin: 0;
+}
+
+.hero {
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    /* background-position: horizontal vertical */
+    background-position: right center;
+    /*background-size: cover = mostrar imagem inteira;*/
+    background-size: cover;
+    border-top: 1px solid transparent; /* diminuiu a distancia entre o topo e a borda */
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 46px;
+    /*text-shadow: 3px  3px 5px red; serve para colocar sombra e fumaça no texto */
+    text-shadow: 3px  3px 5px #333;
+}
+
+.hero-content p{
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block; /* codigo para ocupar somente o espaço escrito e nao a linha inteira */
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+main {
+    /*
+      width => largura 
+      height => altura 
+    */ 
+    width: 80%;
+    margin: auto;
+}
+
+.content-section {
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto; /* serve para ajustar os efeitos colaterais que o float causa no bloco em que ele esta contido */ 
+}
+
+.card {
+    width: 32%;
+    /* display: inline-block; foi retirado por causa do espaco em branco que ele coloca entre as imagens*/
+    float: left; 
+    box-sizing: border-box; /* ao realizar padding o bloco não irá aumentar, somente seu conteúdo interno irá aumentar */
+}
+
+.card-1, .card-2 {
+    margin-right: 2%;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+.card p {
+    background-color: #464646;
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
+
+header h2 {
+    background-color: #eeeeee;
+    border-bottom: #d6d6d6;
+    border-bottom-style: solid;
+    padding-left: 5px;
+}
+
+footer {
+    background-color: #6b6c67;
+    height: 80px;
+}
+footer p {
+    margin: auto;
+    text-align: center;
+    font-size: smaller;
+    text-shadow: 5px 2px 4px black;
+    color:  white;
+    /*line-height: 80px; deve ter mesmo valor de height: 80px; para ficar alinhado ao meio*/ 
+    line-height: 80px; 
+}
+
+/* 
+display: block => realiza a quebra de linha
+display: inline-block => ocupa o mesmo espaço do bloco sem quebrar a linha
+display: none => retira as configurações que existem na tag
+visibility: hidden => esconde a tag mas nao retira o espaço
+*/
+
+.hero nav ul {
+    text-align: right;
+    margin: 25px 50px 0 0; /* top, right baixo esquerda */
+}
+
+.hero nav li {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.hero nav a {
+    background: rgba(0,0,0,0.3); /* aplicar transparência */ 
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none; /* retira o sublinhado */
+    text-transform: uppercase; /* transforma as palavras da TAG em maisculo */
+    font-size: 12px;
+    letter-spacing: 2px; /* espaço entre as letras */
+}
+
+/* ao passar o mouse por cima a opacidade deverá aumentar */
+.hero nav a:hover {
+    background: rgba(0,0,0,0.5);  
+}
