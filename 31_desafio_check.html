@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8">
+    <meta name="author" content="lucas">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5, tecnologia">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            margin-right: 25px;
+        }
+        
+        input[type="checkbox"] {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;  
+            opacity: 0;
+            /* para acessibilidade a partir do teclado para pessoas com problemas motores */
+        }
+
+        label input:focus + span {
+            /* border: 1px solid red;
+                box-sizing: border-box;  
+                tem o mesmo efeitos que o debaixo 
+            */
+            box-shadow: 0 0 0 2px red;
+        }
+
+        input[type="checkbox"] ~ .chk{
+            display: inline-block;         
+            width: 60px;
+            height: 30px;
+            border-radius: 15px;
+            background: #bbb;
+            position: relative;
+            box-sizing: border-box;            
+        }
+
+        input[type="checkbox"] ~ .chk::before{
+            content: "";
+            position: absolute;
+            display: block;            
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background: rgb(160, 146, 146);
+            border-radius: 50%; 
+            box-sizing: border-box;
+            /* box-sizing: trabalhar somente com o conteudo interno sem interferencia do item pai */
+            width: 50%;
+            transition: .2s ease-in-out;
+        }
+        
+        input[type="checkbox"]:checked ~ .chk::before{
+            content: "";
+            background: red;
+            transform: translateX(88%);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>estrutura basica</h1>
+
+    <label>
+        <input type="checkbox">
+        <span class="chk"></span>
+        Esporte
+    </label>
+    <label>
+        <input type="checkbox">
+        <span class="chk"></span>
+        Politica
+    </label>
+    <label>
+        <input type="checkbox">
+        <span class="chk"></span>
+        Educação
+    </label>
+</body>
+
+</html>

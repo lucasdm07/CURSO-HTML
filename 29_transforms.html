@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8">
+    <meta name="author" content="lucas">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5, tecnologia">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1 {
+            width: 150px;
+            height: 50px;
+            background: red;
+            transform: translate(50%, 50%);
+            /* o translate trabalha com posição relativa a ele mesmo e não com o elemento pai*/
+        }
+
+        .div2 {
+            width: 150px;
+            height: 50px;
+            background: blue;
+            position: relative;
+            left: 50%;
+        }
+        .div3{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+        .div3-interna{
+            background: yellow;
+            transform: translate(80%, 25px);
+        }
+        .div4{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+        .div4-interna{
+            background: yellow;
+            transform: rotate(-25deg);
+        }
+        .div5{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+        .div5-interna{
+            background: yellow;
+            transform: rotate(30deg);
+            transform-origin: left top;
+        }
+        .div6{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+        .div6-interna{
+            background: yellow;
+            transform: rotate(30deg) translate(30px);
+        }
+        .div7{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+        .div7-interna{
+            background: yellow;
+            transform: translate(30px) rotate(30deg);
+        }
+        .div8{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transform: skewX(10deg) skewY(50deg);
+        }
+        .div9{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transform: scale(.5) translateX(50%);
+            transition: .5s;
+        }
+        .div9:hover{
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <hr>
+    <div class="div3">
+        <div class="div3-interna">conteudo qualquer</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at volutpat metus. Phasellus ac dapibus
+            purus,
+            ac faucibus sapien. Aenean condimentum sem in sem condimentum, eu posuere massa ultricies. Vestibulum non
+            ultricies leo. Aenean ac odio ac tellus porta vulputate eget quis metus. Etiam at mattis mi. Nunc et augue
+            id enim tincidunt luctus. Sed pulvinar leo vel nulla dictum, ac convallis nisl vehicula.
+        </p>
+    </div>
+    <hr>
+    <div class="div4">
+        <div class="div4-interna">conteudo qualquer</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at volutpat metus. Phasellus ac dapibus
+            purus,
+            ac faucibus sapien. Aenean condimentum sem in sem condimentum, eu posuere massa ultricies. Vestibulum non
+            ultricies leo. Aenean ac odio ac tellus porta vulputate eget quis metus. Etiam at mattis mi. Nunc et augue
+            id enim tincidunt luctus. Sed pulvinar leo vel nulla dictum, ac convallis nisl vehicula.
+        </p>
+    </div>
+    <hr>
+    <div class="div5">
+        <div class="div5-interna">conteudo qualquer</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at volutpat metus. Phasellus ac dapibus
+            purus,
+            ac faucibus sapien. Aenean condimentum sem in sem condimentum, eu posuere massa ultricies. Vestibulum non
+            ultricies leo. Aenean ac odio ac tellus porta vulputate eget quis metus. Etiam at mattis mi. Nunc et augue
+            id enim tincidunt luctus. Sed pulvinar leo vel nulla dictum, ac convallis nisl vehicula.
+        </p>
+    </div>
+    <hr>
+    <div class="div6">
+        <div class="div6-interna">conteudo qualquer</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at volutpat metus. Phasellus ac dapibus
+            purus,
+            ac faucibus sapien. Aenean condimentum sem in sem condimentum, eu posuere massa ultricies. Vestibulum non
+            ultricies leo. Aenean ac odio ac tellus porta vulputate eget quis metus. Etiam at mattis mi. Nunc et augue
+            id enim tincidunt luctus. Sed pulvinar leo vel nulla dictum, ac convallis nisl vehicula.
+        </p>
+    </div>
+    <hr>
+    <div class="div7">
+        <div class="div7-interna">conteudo qualquer</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at volutpat metus. Phasellus ac dapibus
+            purus,
+            ac faucibus sapien. Aenean condimentum sem in sem condimentum, eu posuere massa ultricies. Vestibulum non
+            ultricies leo. Aenean ac odio ac tellus porta vulputate eget quis metus. Etiam at mattis mi. Nunc et augue
+            id enim tincidunt luctus. Sed pulvinar leo vel nulla dictum, ac convallis nisl vehicula.
+        </p>
+    </div>
+    <div class="div8">div8</div>
+    <div class="div9">div9</div>
+</body>
+
+</html>
