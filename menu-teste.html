@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8">
+    <meta name="author" content="lucas">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .header {
+            height: 3.75em;
+            background-color: pink;
+        }
+        
+        .caixaMenu {
+            margin-top: 15px;
+            display: inline-block;
+            border: 2px solid transparent;
+            padding: 12px 15px;
+            position: relative;
+        }
+
+        .listraMenu1 {
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 3px;
+            height: 5px;
+            width: 100%;
+            background-color: green;
+        }
+
+        .listraMenu2 {
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 10px;
+            height: 5px;
+            width: 100%;
+            background-color: green;
+        }
+
+        .listraMenu3 {
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 17px;
+            height: 5px;
+            width: 100%;
+            background-color: green;
+        }
+
+        #abrirMenuL {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+            margin: 0;
+        }        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <input type="checkbox" id="abrirMenu">
+        <label for="abrirMenu" class="caixaMenu">
+            <span class="listraMenu1"></span>
+            <span class="listraMenu2"></span>
+            <span class="listraMenu3"></span>
+        </label>
+    </header>
+    <h1>estrutura basica</h1>
+</body>
+
+</html>
